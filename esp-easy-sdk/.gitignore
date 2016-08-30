@@ -1,5 +1,5 @@
-/build
-/firmware
+build
+firmware
 
 .cproject
 .project

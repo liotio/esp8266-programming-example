@@ -134,7 +134,7 @@ user_init()
     // TODO: with gpio_init???
     UART_SetBaudrate(UART0, BIT_RATE_115200);
     //Set softAP + station mode
-    wifi_set_opmode(STATIONAP_MODE);
+    wifi_set_opmode(STATION_MODE);
 
     // wifi_station_scan has to be called after system init done and station enable.
     system_init_done_cb(sys_init_done_cb);

@@ -4,15 +4,15 @@
 
 ### SDK
 
-Setup the esp-open-sdk as described on it's project readme.
-See https://github.com/pfalcon/esp-open-sdk
+Setup the esp-easy-sdk as described on it's project readme.
+See https://github.com/liotio/esp-easy-sdk
 
 You will need a linux machine for this, as a windows user, you can use a virtual machine.
 Use Ubuntu or Debian if you are not sure which distribution you should choose.
 Both are supporting the `apt-get` package manager that is used in the above-named readme.
 
-The most important step is to add an environment variable called `ESP_OPEN_SDK` that is pointing to the esp-open-sdk root directory.
-You can do this by adding `export ESP_OPEN_SDK=/path/to/esp-open-sdk` to your `~/.bashrc` file.
+The most important step is to add an environment variable called `ESP_EASY_SDK` that is pointing to the esp-easy-sdk root directory.
+You can do this by adding `export ESP_EASY_SDK=/path/to/esp-easy-sdk` to your `~/.bashrc` file.
 
 ### IDE
 
@@ -23,7 +23,7 @@ There are only a few steps that need to be gone through to set up this project
 Download, install (Java needed) and open Eclipse.
 
 Afterwars choose `File`, `Import...`, `C/C++`, `Existing Code as Makefile Project`.
-Choose an arbitrary `Project Name` and brose to the `Existing Code Location`.
+Choose an arbitrary `Project Name` and browse to the `Existing Code Location`.
 Leave all other fields on their defauls.
 
 Right click the just created project and choose `Properties` at the bottom.
