@@ -21,14 +21,16 @@ print(sta_if.ifconfig()[0])
 while True:
     client, address = socket.accept()
     print('client connected from', address)
+    req = client.recv(1024)
     
-    if led_active == 0:
-        led_pin.low()
-        led_active = 1
-        client.send('LED is now ON')
-    else:
-        led_pin.high()
-        led_active = 0
-        client.send('LED is now OFF')
+    if 'GET / ' in req:
+        if led_active == 0:
+            led_pin.low()
+            led_active = 1
+            client.send('LED is now ON')
+        else:
+            led_pin.high()
+            led_active = 0
+            client.send('LED is now OFF')
     
     client.close()
