@@ -1,0 +1,8 @@
+/build
+/firmware
+
+.cproject
+.project
+.settings
+
+**/wifi_config.h
